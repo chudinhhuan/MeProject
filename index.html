@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./reponsive.css">
+
+    <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css">
+</head>
+
+<body>
+    <!-- 
+        1.Header 
+        2.slider
+        3.content
+        4.footer
+    -->
+    <div id="container">
+        <div id="header">
+            <div class="header__top hide-on-mobile">
+                <div class="header__top--sytems">
+                    <a href="">
+                        <i class="fa-solid fa-house-chimney-user"></i> Hệ thống cửa hàng
+                    </a>
+                </div>
+                <div class="header__top--hotline">
+                    <a href="tel:0385861167">
+                        <i class="fa-solid fa-phone-flip"></i> Mua hàng online: 038.5861167
+                    </a>
+                </div>
+            </div>
+            <!-- Navbar PC -->
+            <div class="header__center">
+                <span class="header__center--logo">
+                    <img src="./IMG/logo1.jpg" alt="">
+                </span>
+                <div class="header__center--menu hide-on-mobile-table">
+                    <ul class="header__center--menu-list">
+                        <li class="header__center--menu-item">
+                            <a href="">
+                                <span class="header__center--menuSP">SẢN PHẨM</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="header__center--menu__pro">
+                                <ul class="header__center--menu__proList">
+                                    <li class="header__center--menu__proList-item">
+                                        <a href="" class="header__center--menu__proList--link">
+                                            <span><p>Áo sơ mi</p></span>
+                                            <span><p>Áo thun</p></span>
+                                            <span><p>Quần tây</p></span>
+                                            <span><p>Quần jean</p></span>
+                                            <span><p>Giày sport</p></span>
+                                            <span><p>Giày tây</p></span>
+                                            <span><p>Mũ</p></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__center--menu-item">
+                            <a href="#newproeuct">
+                                <span>SẢN PHẨM MỚI</span>
+                            </a>
+                        </li>
+                        <li class="header__center--menu-item">
+                            <a href="#hotproduct"><span>SẢN PHẨM BÁN CHẠY</span></a>
+                        </li>
+                        <li class="header__center--menu-item">
+                            <a href="">
+                                <span>NH ONLINE</span>
+                            </a>
+                        </li>
+                        <li class="header__center--menu-item">
+                            <a href="">
+                                <span>
+                                    SALE
+                                </span>
+                                <i class="fa-solid fa-angle-down"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__center--icons hide-on-mobile">
+                    <ul class="header__center--icons-list">
+                        <li class="header__center--icons-item">
+                            <i class="fa-solid fa-magnifying-glass"></i> Tài khoản</li>
+                        <li class="header__center--icons-item">
+                            <i class="fa-solid fa-cart-arrow-down"></i> Giỏ hàng</li>
+                    </ul>
+                </div>
+
+
+                <!-- Navbar Mobile -->
+
+
+                <!-- Mobile  Cart-->
+                <div class="header__center--icons-mobile">
+                    <ul>
+                        <li class="header__center--icons-item-mobile">
+                            <i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li class="header__center--icons-item-mobile">
+                            <i class="fa-solid fa-cart-arrow-down"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Navbar Mobile -->
+            <label for="nav__mobile-input" class="header__center-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" name="" class="nav__input" id="nav__mobile-input">
+            <label for="nav__mobile-input" class="nav__overlay"></label>
+
+            <div class="nav__mobile">
+                <ul class="nav__mobile--li">
+                    <label for="nav__mobile-input" class="nav__mobile-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                    <li class="nav__mobile--item">
+                        <a href="">
+                            <span class="nav__mobile__itemSP">SẢN PHẨM</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+
+                    </li>
+                    <li class="nav__mobile--item">
+                        <a href="#">
+                            <span>SẢN PHẨM MỚI</span>
+                        </a>
+                    </li>
+                    <li class="nav__mobile--item">
+                        <a href="">
+                            <span>BỘ SƯU TẬP</span>
+                            <i class="fa-solid fa-angle-down"></i></a>
+                    </li>
+                    <li class="nav__mobile--item">
+                        <a href="">
+                            <span>NH ONLINE</span>
+                        </a>
+                    </li>
+                    <li class="nav__mobile--item">
+                        <a href="">
+                            <span>
+                                SALE
+                            </span>
+                            <i class="fa-solid fa-angle-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--  -->
+        <div id="slider">
+            <div class="slider__main">
+                <!-- <img src="./IMG/slide1.jpg" onclick="changeImage()" class="slider__img-feature" alt=""> -->
+                <a href="#blog">
+                    <img src="./IMG/slide1.jpg" class="slider__img-feature" alt="">
+                </a>
+                <div class="slider__control">
+                    <div class="control prev">
+                        <button> <i class="fa-solid fa-arrow-left"></i></button>
+                    </div>
+                    <div class="control next">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content__inner">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6">
+                            <div class="item">
+                                <div class="item_img">
+                                    <img src="./IMG/product_2_a1.jpg" alt="">
+                                </div>
+                                <div class="item__content">
+                                    <div class="item_right"><b>BEST SELLER</b></div>
+                                    <div class="item_left">SHOP NOW</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="item">
+                                <div class="item_img">
+                                    <img src="./IMG/product_2_b1.jpg" alt="">
+                                </div>
+                                <div class="item__content">
+                                    <div class="item_right"><b>NEW COLLECTION   </b></div>
+                                    <div class="item_left">BEST SELLER</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="newproeuct" class="content__inner">
+                <div class="section-title">
+                    <h2>SẢN PHẨM MỚI</h2>
+                </div>
+                <div class="grid-uniform">
+                    <div class="grid wide">
+                        <div class="filtering1">
+                            <!-- <div class="container_item">
+                                <div class="item">
+                                    <div class="item_img">
+                                        <img src="./IMG/product_4_1_a.jpg" alt="">
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="">ĐẦM BÔNG CẦM TAY D05752</a>
+                                    </div>
+                                    <div class="item_price">
+                                        <span>1,399,999đ</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hotproduct" class="content__inner">
+                <div class="section-title">
+                    <h2>SẢN PHẨM BÁN CHẠY</h2>
+                </div>
+                <div class="grid-uniform">
+                    <div class="grid wide">
+                        <div class="filtering2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__inner">
+                <div id="blog" class="section-title">
+                    <h2 style="font-size: 30px;">NEM’S BLOG</h2>
+                    <p style="font-size: 15px;">ĐÓN ĐẦU XU HƯỚNG, ĐỊNH HÌNH PHONG CÁCH</p>
+                </div>
+                <div class="grid-uniform">
+                    <div class="grid wide">
+                        <div class="filtering3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer__inner">
+                <div class="ft__subscribe">
+                    <h2>đăng ký bản tin</h2>
+                    <p>
+                        Đăng ký nhận bản tin NEM để được cập nhật những mẫu thiết kế mới nhất
+                    </p>
+                    <div class="ft__sub-wrapper">
+                        <form action="">
+                            <input type="text" placeholder="Vui long nhap Email">
+                            <button>Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="ft__social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i> </a>
+                </div>
+            </div>
+            <div class="footer__content">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 ft-left">
+                            <div class="item-ft">
+                                <div class="title-ft">
+                                    <h3>NEM FASHION - THỜI TRANG công sở</h3>
+                                </div>
+                                <div class="ft-contact desc-ft">
+                                    Công ty TNHH Dịch vụ và Thương mại An Thành.
+                                    <br> Số ĐKKD 0107861393, Sở KHĐT Tp. Hà Nội cấp ngày 04/10/2017
+                                </div>
+                                <div class="ft-contact address-ft">
+                                    Địa chỉ: Phòng 1002, tầng 10, Tòa nhà NEM
+                                    <br>số 545 đường Nguyễn Văn Cừ, P. Gia Thụy, Q. Long Biên, Hà Nội
+                                </div>
+                                <div class="ft-contact tel-ft">
+                                    Chăm sóc khách hàng: 0243.9388512
+                                    <br>Mua hàng online: 0246.2909098
+                                </div>
+                                <div class="ft-contact email ft">
+                                    Email: nemcskh@stripe-vn.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-8 ft-right">
+                            <div class="row">
+                                <div class="col l-4">
+                                    <div class="item-ft item-ft--child">
+                                        <ul>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">triet ly kinh doanh</a></li>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">lien he</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col l-4">
+                                    <div class="item-ft item-ft--child">
+                                        <ul>
+                                            <li><a href="">Chính sách giao nhận - Vận chuyển</a></li>
+                                            <li><a href="">triet ly kinh doanh</a></li>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">lien he</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col l-4">
+                                    <div class="item-ft item-ft--child">
+                                        <ul>
+                                            <li><a href="">gioi thieu</a></li>
+                                            <li><a href="">triet ly kinh doanh</a></li>
+                                            <li><a href="">gioi thieu</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="ft-source">
+                <a href="">@ 2022 Ban quyen thuoc ve ...</a href="">
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+</body>
+<!-- Slick slider -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="./app.js"></script>
+
+</html>

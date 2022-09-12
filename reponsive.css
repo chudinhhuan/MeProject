@@ -1,0 +1,152 @@
+/* Mobile and Tablet */
+
+@media (max-width:1023px) {
+    .hide-on-mobile-table {
+        display: none;
+    }
+    .header__center-mobile {
+        display: block;
+        padding-left: 150px;
+        top: 40%;
+        position: absolute;
+    }
+    .nav__mobile,
+    .nav__input {
+        display: block;
+    }
+    .nav__mobile {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 220px;
+        max-width: 100%;
+        background: #f5f6fa;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform linear 0.3s;
+    }
+    .nav__mobile-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 4rem;
+        font-size: #666;
+        font-weight: 500;
+    }
+    .nav__mobile--item {
+        display: block;
+        margin-top: 20px;
+        padding: 8px 0;
+        font-size: 24px;
+    }
+    .nav__mobile--item a {
+        text-decoration: none;
+        color: black;
+    }
+    .nav__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+        /* animation: name style time */
+        animation: fadeIn linear 0.3s;
+    }
+    .nav__input:checked~.nav__overlay {
+        display: block;
+    }
+    .nav__input:checked~.nav__mobile {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .nav__input {
+        display: none;
+    }
+    /* Hover  menu truot len */
+    .nav__mobile--item:hover .nav__mobile--item a {
+        color: red;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* Slider */
+}
+
+
+/* Tablet */
+
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-on-table {
+        display: none;
+    }
+    /* #slider {
+        padding-top: 20px;
+        margin-top: 200px;
+    } */
+    .header__center--icons-mobile {
+        display: none;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width:739px) {
+    #slider {
+        margin-right: -95px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .header__center-mobile {
+        top: 22%;
+    }
+    #slider {
+        padding-top: 80px;
+        margin-top: 160px;
+    }
+    .section-title {
+        font-size: 15px;
+    }
+    .content__inner {
+        margin: -24px;
+        padding: 12px;
+    }
+    .item {
+        padding-right: 0px;
+    }
+    .item_right {
+        font-size: 20px;
+    }
+    /* Gio hang */
+    .header__center--icons-mobile {
+        display: block;
+    }
+    .header__center--icons-mobile ul {
+        list-style-type: none !important;
+    }
+    .header__center--icons-item-mobile {
+        margin-top: 20px;
+        margin-right: 20px;
+        display: inline-block;
+        font-size: 35px;
+    }
+    /* Footer */
+    .ft__sub-wrapper input {
+        width: 250%;
+        left: -70%;
+        position: absolute;
+    }
+    .ft__sub-wrapper button {
+        padding: 0px 20px;
+        right: -180%;
+    }
+}
